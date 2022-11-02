@@ -22,6 +22,8 @@ nav
 		font-weight: 300 
 		text-decoration: none 
 		color: $white 
+		&:hover
+			color: #aaaaaa
 .subheader 
 	display: block 
 	margin-top: 50px 
@@ -49,7 +51,9 @@ nav
 		text-align: right 
 		color: $white 
 		line-height: 16px 
-		text-decoration: none 
+		text-decoration: none
+		&:hover
+			color: #aaaaaa
 	&_btn 
 		width: 172px 
 		height: 46px 
@@ -319,7 +323,7 @@ nav
 		font-weight: normal
 		color: $topaz
 	&_descr
-		  color: $topaz
+		color: $topaz
 	&_list
 		list-style-type: none
 		padding-left: 50px
@@ -442,6 +446,9 @@ footer
 					color: $topaz-two
 					text-decoration: none
 		&_downloads
+			display: flex
+			justify-content: space-between
+
 
 .xs-visible
 	display: none

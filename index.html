@@ -24,12 +24,12 @@
         <nav>
             <div class="container">
                 <ul class="menu">
-                    <li class="menu_item"><a href="#" class="menu_link">Главная</a></li>
-                    <li class="menu_item"><a href="#require" class="menu_link">Со своим автомобилем</a></li>
-                    <li class="menu_item"><a href="#require" class="menu_link">На автомобиле компании</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">Требования</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">Контакты</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">Оставить заявку</a></li>
+                    <li class="menu_item"><a href="#promo" class="menu_link">Главная</a></li>
+                    <li class="menu_item"><a href="#own_car" class="menu_link">Со своим автомобилем</a></li>
+                    <li class="menu_item"><a href="#comp_car" class="menu_link">На автомобиле компании</a></li>
+                    <li class="menu_item"><a href="#require" class="menu_link">Требования</a></li>
+                    <li class="menu_item"><a href="#promo" class="menu_link">Контакты</a></li>
+                    <li class="menu_item"><a href="#promo" class="menu_link">Оставить заявку</a></li>
                 </ul>
             </div>
             <div class="hamburger">
@@ -59,7 +59,7 @@
         </div>
     </header>
 
-    <section class="promo">
+    <section class="promo" id="promo">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 offset-md-0 col-lg-10 offset-lg-1">
@@ -237,14 +237,14 @@
         </div>
     </section>
 
-    <section class="require" id="require">
+    <section class="require">
         <div class="container">
             <div class="label">возможности</div>
             <div class="title">условия и требования</div>
             <div class="row">
                 <div class="col-md-6">
                     <div class="require_block">
-                        <div class="require_title">УСЛОВИЯ: со своим авто:</div>
+                        <div class="require_title" id="own_car">УСЛОВИЯ: со своим авто:</div>
                         <ul class="require_list">
                             <li>Подключаем к системе UBER под 10%.</li>
                             <li>Ни каких взносов 0%!</li>
@@ -260,7 +260,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="require_block">
-                        <div class="require_title">УСЛОВИЯ: на авто компании:</div>
+                        <div class="require_title" id="comp_car">УСЛОВИЯ: на авто компании:</div>
                         <ul class="require_list">
                             <li>Предоставляем авто без залога</li>
                             <li>Без ежедневных выплат по аренде</li>
@@ -269,7 +269,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="require_block require_block_nmb warning">
+                    <div class="require_block require_block_nmb warning" id="require">
                         <div class="require_title">ТРЕБОВАНИЕ:</div>
                         <ul class="require_list">
                             <li>Наличие автомобиля без рекламы</li>
@@ -311,26 +311,36 @@
         <div class="footer_wrapper">
             <div>
                 <div class="footer_media">
-                    <a href="#">
-                        <div class="footer_media_circle">
-                            <i class="fa-brands fa-facebook"></i>
+                    <div class="row">
+                        <div class="col-6 col-sm-3">
+                            <a href="#">
+                                <div class="footer_media_circle">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                    <a href="#">
-                        <div class="footer_media_circle">
-                            <i class="fa-brands fa-twitter"></i>
+                        <div class="col-6 col-sm-3">
+                            <a href="#">
+                                <div class="footer_media_circle">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                    <a href="#">
-                        <div class="footer_media_circle">
-                            <i class="fa-brands fa-linkedin"></i>
+                        <div class="col-6 col-sm-3">
+                            <a href="#">
+                                <div class="footer_media_circle">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                    <a href="#">
-                        <div class="footer_media_circle">
-                            <i class="fa-brands fa-instagram"></i>
+                        <div class="col-6 col-sm-3">
+                            <a href="#">
+                                <div class="footer_media_circle">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                            </a>
                         </div>
-                    </a>
+                    </div>
                 </div>
             </div>
             <div>
@@ -354,7 +364,7 @@
             </div>
             <div>
                 <div class="footer_downloads">
-                    <a href=""><img src="icons/footer/download_ico.png" alt=""></a>
+                    <!-- <a href=""><img src="icons/footer/download_ico.png" alt=""></a> -->
                 </div>
             </div>
         </div>
